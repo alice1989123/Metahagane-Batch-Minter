@@ -1,0 +1,16 @@
+{
+  "name": "cardano-minter",
+  "version": "1.0.0",
+  "description": "A Cardano NFTs minter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alicia Basilio",
+  "license": "ISC",
+  "dependencies": {
+    "@blockfrost/blockfrost-js": "^4.0.1",
+    "axios": "^0.25.0",
+    "dotenv": "^16.0.0"
+  }
+}
