@@ -9,8 +9,8 @@ const {
 } = require("./Cardano/custom_modules/@emurgo/cardano-serialization-lib-nodejs/cardano_serialization_lib");
 
 //console.log(address);
-sendAllTokens(
+/* sendAllTokens(
   address,
   prvKey,
-  "addr_test1qpt5akr98022xddld4he0rf7s603f04uv5ammywkvrk9p5fwx27w0tclpgyvut0nzqmvyxu5dnuw03rx42rup8q4qaqq2l70ns"
-); // senderBech32,    senderPrvKey,     reciverBech32
+  "addr_test1qpujcmmsumgj6xpyknwlh4ga8y0t3vg5jtsw09s8v5xwpdta9xq2u7rwnp0q43xh8qku3prjv2yk9ex80p7368034uxs9fcr36"
+); */ // senderBech32,    senderPrvKey,     reciverBech32

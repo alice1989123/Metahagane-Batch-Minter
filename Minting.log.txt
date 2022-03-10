@@ -1,71 +1,41 @@
-batch number 0 has been donde with hash BlockfrostServerError: "transaction submit error ShelleyTxValidationError ShelleyBasedEraAlonzo (ApplyTxError [UtxowFailure (WrappedShelleyEraFailure (UtxoFailure (ValueNotConservedUTxO (Value 93804461 (fromList [(PolicyID {policyID = ScriptHash \"be3313fa676dea1145be92ce9b29f0371e088ae0f78d6633461fa904\"},fromList [(\"charcoal102\",1),(\"charcoal120\",1),(\"charcoal135\",1),(\"charcoal192\",1),(\"charcoal205\",1),(\"charcoal246\",1),(\"charcoal270\",1),(\"charcoal336\",1),(\"charcoal339\",1),(\"charcoal370\",1),(\"charcoal391\",1),(\"charcoal42\",1),(\"charcoal444\",1),(\"charcoal46\",1),(\"charcoal476\",1),(\"charcoal539\",1),(\"charcoal557\",1),(\"charcoal560\",1),(\"charcoal653\",1),(\"ironore110\",1),(\"ironore126\",1),(\"ironore43\",1),(\"ironore7\",1),(\"ironsands32\",1),(\"oakwood1\",1)])])) (Value 49841502 (fromList [(PolicyID {policyID = ScriptHash \"be3313fa676dea1145be92ce9b29f0371e088ae0f78d6633461fa904\"},fromList [(\"charcoal102\",1),(\"charcoal120\",1),(\"charcoal135\",1),(\"charcoal192\",1),(\"charcoal205\",1),(\"charcoal246\",1),(\"charcoal270\",1),(\"charcoal336\",1),(\"charcoal339\",1),(\"charcoal370\",1),(\"charcoal391\",1),(\"charcoal42\",1),(\"charcoal444\",1),(\"charcoal46\",1),(\"charcoal476\",1),(\"charcoal539\",1),(\"charcoal557\",1),(\"charcoal560\",1),(\"charcoal653\",1),(\"ironore110\",1),(\"ironore126\",1),(\"ironore43\",1),(\"ironore
-batch number 0 has been donde with hash 5bd3ffb268211e662b2b7dbf12545e16dd66ef85afa3fa4eacad2c1b88fb7e92
-batch number 1 has been donde with hash underflow
-batch number 2 has been donde with hash 5b64135c4ed9abbf8eee9f7f8299a5661fa4328c790d6c03c5425f8cb2921a3f
-batch number 3 has been donde with hash underflow
-batch number 4 has been donde with hash underflow
-batch number 5 has been donde with hash underflow
-batch number 6 has been donde with hash 1b5a485eace340f2b6f633ac603583a9fc57d7aa0ff852494bb854ee8f2acba8
-batch number 7 has been donde with hash 3cde2140e1582a99ab178aec6c883356fe92cf62c44d995d53b4c61de81c31e5
-batch number 8 has been donde with hash underflow
-batch number 9 has been donde with hash BlockfrostServerError: "transaction submit error ShelleyTxValidationError ShelleyBasedEraAlonzo (ApplyTxError [UtxowFailure (WrappedShelleyEraFailure (UtxoFailure (ValueNotConservedUTxO (Value 93804461 (fromList [(PolicyID {policyID = ScriptHash \"be3313fa676dea1145be92ce9b29f0371e088ae0f78d6633461fa904\"},fromList [(\"charcoal111\",1),(\"charcoal152\",1),(\"charcoal239\",1),(\"charcoal252\",1),(\"charcoal296\",1),(\"charcoal3\",1),(\"charcoal344\",1),(\"charcoal353\",1),(\"charcoal382\",1),(\"charcoal384\",1),(\"charcoal427\",1),(\"charcoal438\",1),(\"charcoal466\",1),(\"charcoal496\",1),(\"charcoal506\",1),(\"charcoal533\",1),(\"charcoal74\",1),(\"charcoal83\",1),(\"charcoal87\",1),(\"ironor
-batch number 10 has been donde with hash underflow
-batch number 11 has been donde with hash 72649b489ade3ba7967db4dce5fbf9abc7ed8ea0a95d40a9f99bcdcd129c3dea
-batch number 12 has been donde with hash 3e26c43f50b7c62513d63fbce9c8a2739e688391f7802d3b8eedccf66371b770
-batch number 13 has been donde with hash underflow
-batch number 14 has been donde with hash underflow
-batch number 15 has been donde with hash underflow
-batch number 16 has been donde with hash underflow
-batch number 17 has been donde with hash 4f0298fa1da6c2142d65db57911d1da4ff98d81d23ce366339c76c5ff89d3d2a
-batch number 18 has been donde with hash BlockfrostServerError: "transaction submit error ShelleyTxValidationError ShelleyBasedEraAlonzo (ApplyTxError [UtxowFailure (WrappedShelleyEraFailure (UtxoFailure (ValueNotConservedUTxO (Value 93804461 (fromList [(PolicyID {policyID = ScriptHash \"be3313fa676dea1145be92ce9b29f0371e088ae0f78d6633461fa904\"},fromList [(\"charcoal107\",1),(\"charcoal149\",1),(\"charcoal158\",1),(\"charcoal186\",1),(\"charcoal272\",1),(\"charcoal280\",1),(\"charcoal290\",1),(\"charcoal303\",1),(\"charcoal318\",1),(\"charcoal323\",1),(\"charcoal334\",1),(\"charcoal337\",1),(\"charcoal395\",1),(\"charcoal440\",1),(\"charcoal522\",1),(\"charcoal54\",1),(\"charcoal575\",1),(\"charcoal614\",1),(\"charcoal632\",1),(\"charcoal658\",1),(
-batch number 19 has been donde with hash underflow
-batch number 20 has been donde with hash e14b6dde30f7cd66ffae4ed1ec97d6f1323ab8fae1c82094b85cca8e8249c853
-batch number 21 has been donde with hash b3958cb064c2137c06d8ff5567554c942880b90d210ae725bfe4c79b1a45b346
-batch number 22 has been donde with hash underflow
-batch number 23 has been donde with hash 28d1c8fe9023de08657d7f410204cdbae6008f86b12f42ffca6e138b7871192e
-batch number 24 has been donde with hash underflow
-batch number 25 has been donde with hash underflow
-batch number 26 has been donde with hash bc6e2ce8df64eebeec60f56a22edd19f09178d173aa9b11c1a68e7ebd4b1b661
-batch number 27 has been donde with hash underflow
-batch number 28 has been donde with hash 33f304028d3b84e5024ae7df340fa9bb50698a7e7906c83de5e12cfb38ff6a0a
-batch number 29 has been donde with hash underflow
-batch number 30 has been donde with hash BlockfrostServerError: "transaction submit error ShelleyTxValidationError ShelleyBasedEraAlonzo (ApplyTxError [UtxowFailure (WrappedShelleyEraFailure (UtxoFailure (ValueNotConservedUTxO (Value 93804461 (fromList [(PolicyID {policyID = ScriptHash \"be3313fa676dea1145be92ce9b29f0371e088ae0f78d6633461fa904\"},fromList [(\"charcoal106\",1),(\"charcoal124\",1),(\"charcoal137\",1),(\"charcoal184\",1),(\"charcoal263\",1),(\"charcoal324\",1),(\"charcoal343\",1),(\"charcoal41\",1),(\"charcoal439\",1),(\"charcoal497\",1),(\"charcoal524\",1),(\"charcoal691\",1),(\"charcoal99\",1),(\"ironore11\",1),(\"ironore71\",1),(\"ironore82\",1),(\"ironore88\",1),(\"ironore90\",1),(\"ironsands61\",1),(\"ironsands68\",1),(\"ironsan
-batch number 31 has been donde with hash BlockfrostServerError: "transaction submit error ShelleyTxValidationError ShelleyBasedEraAlonzo (ApplyTxError [UtxowFailure (WrappedShelleyEraFailure (UtxoFailure (ValueNotConservedUTxO (Value 93804461 (fromList [(PolicyID {policyID = ScriptHash \"be3313fa676dea1145be92ce9b29f0371e088ae0f78d6633461fa904\"},fromList [(\"charcoal144\",1),(\"charcoal180\",1),(\"charcoal242\",1),(\"charcoal251\",1),(\"charcoal311\",1),(\"charcoal383\",1),(\"charcoal45\",1),(\"charcoal468\",1),(\"charcoal486\",1),(\"charcoal498\",1),(\"charcoal52\",1),(\"charcoal544\",1),(\"charcoal550\",1),(\"charcoal580\",1),(\"charcoal659\",1),(\"charcoal669\",1),(\"charcoal677\",1),(\"charcoal695\",1),(\"charcoal88\",1),(\"ironore24\",1),(\"
-batch number 32 has been donde with hash underflow
-batch number 33 has been donde with hash BlockfrostServerError: "transaction submit error ShelleyTxValidationError ShelleyBasedEraAlonzo (ApplyTxError [UtxowFailure (WrappedShelleyEraFailure (UtxoFailure (ValueNotConservedUTxO (Value 132051158 (fromList [(PolicyID {policyID = ScriptHash \"be3313fa676dea1145be92ce9b29f0371e088ae0f78d6633461fa904\"},fromList [(\"charcoal11\",1),(\"charcoal154\",1),(\"charcoal189\",1),(\"charcoal292\",1),(\"charcoal313\",1),(\"charcoal315\",1),(\"charcoal32\",1),(\"charcoal367\",1),(\"charcoal404\",1),(\"charcoal406\",1),(\"charcoal470\",1),(\"charcoal508\",1),(\"charcoal515\",1),(\"charcoal525\",1),(\"charcoal581\",1),(\"charcoal608\",1),(\"charcoal665\",1),(\"charcoal86\",1),(\"charcoal97\",1),(\"ironore106\",1),(\
-batch number 34 has been donde with hash BlockfrostServerError: "transaction submit error ShelleyTxValidationError ShelleyBasedEraAlonzo (ApplyTxError [UtxowFailure (WrappedShelleyEraFailure (UtxoFailure (ValueNotConservedUTxO (Value 93804461 (fromList [(PolicyID {policyID = ScriptHash \"be3313fa676dea1145be92ce9b29f0371e088ae0f78d6633461fa904\"},fromList [(\"charcoal109\",1),(\"charcoal147\",1),(\"charcoal224\",1),(\"charcoal244\",1),(\"charcoal299\",1),(\"charcoal327\",1),(\"charcoal348\",1),(\"charcoal408\",1),(\"charcoal477\",1),(\"charcoal481\",1),(\"charcoal512\",1),(\"charcoal633\",1),(\"charcoal640\",1),(\"charcoal651\",1),(\"charcoal682\",1),(\"charcoal686\",1),(\"charcoal77\",1),(\"ironore29\",1),(\"ironore4\",1),(\"ironore52\",1),(\"irono
-batch number 35 has been donde with hash underflow
-batch number 36 has been donde with hash underflow
-batch number 37 has been donde with hash underflow
-batch number 38 has been donde with hash BlockfrostServerError: "transaction submit error ShelleyTxValidationError ShelleyBasedEraAlonzo (ApplyTxError [UtxowFailure (WrappedShelleyEraFailure (UtxoFailure (ValueNotConservedUTxO (Value 135963933 (fromList [(PolicyID {policyID = ScriptHash \"be3313fa676dea1145be92ce9b29f0371e088ae0f78d6633461fa904\"},fromList [(\"charcoal112\",1),(\"charcoal12\",1),(\"charcoal141\",1),(\"charcoal201\",1),(\"charcoal209\",1),(\"charcoal249\",1),(\"charcoal253\",1),(\"charcoal268\",1),(\"charcoal273\",1),(\"charcoal325\",1),(\"charcoal347\",1),(\"charcoal362\",1),(\"charcoal402\",1),(\"charcoal530\",1),(\"charcoal555\",1),(\"charcoal584\",1),(\"charcoal612\",1),(\"charcoal625\",1),(\"charcoal683\",1),(\"ironore100\",1)
-batch number 39 has been donde with hash underflow
-batch number 29 has been donde with hash fdeb66c6ddab8732d006290075d88727d1ce093fb915cba6589eb982bc4e0863
-batch number 30 has been donde with hash 26ef5c43306b3ce2eacd93c10133096cd7f306bbe412d0efc6adc2615def4276
-batch number 31 has been donde with hash db17974ed1fa7f05b1256077df00992e8d82e399be3318dca812e223aebbbbb5
-batch number 32 has been donde with hash e1bb498e3540798efb7579d5f9ba30950d3dbc8890bf7d9e903a7da36899c68e
-batch number 33 has been donde with hash Error: INPUTS_EXHAUSTED
-batch number 34 has been donde with hash Error: INPUTS_EXHAUSTED
-batch number 35 has been donde with hash Error: INPUTS_EXHAUSTED
-batch number 36 has been donde with hash Error: INPUTS_EXHAUSTED
-batch number 37 has been donde with hash Error: INPUTS_EXHAUSTED
-batch number 1 has been donde with hash 7ebe056aa8d5b4ffdaeda8ee7e1b3cbffb5f61c59d8421f8b6098286a6f110a3
-batch number 3 has been donde with hash 6d4d98efe50f71777cdfaa8088bc3dd02de4a83b17a8ef62aa0b311ef280370b
-batch number 4 has been donde with hash underflow
-batch number 5 has been donde with hash 226f9eb77585e1a0dc83dd6659b4caa4a97a0479186fa6d6977f887ef87a2f22
-batch number 8 has been donde with hash underflow
-batch number 9 has been donde with hash underflow
-batch number 10 has been donde with hash underflow
-batch number 13 has been donde with hash underflow
-batch number 14 has been donde with hash underflow
-batch number 15 has been donde with hash a4918a26fc1d958ffd74a9569a8fb134a76f5e769fcad1cb05967386819d2196
-batch number 16 has been donde with hash underflow
-batch number 18 has been donde with hash a536c335b8ae081a86b0712601310704619d52fd66c1a0ad808902619db551e8
-batch number 19 has been donde with hash cadce34b341ca610227adaab3161032589eaefdd6b6ef0b707e38d89bee0a875
-batch number 22 has been donde with hash underflow
-batch number 33 has been donde with hash 3737645e2e77958cbec5fa1c279e2719204aa828ec5a8d7fd2ff90f68e13f273
-batch number 34 has been donde with hash d80c2e0f0e3d6ea4cef080675960a9f9e7922d30d3614cca72e89737716725bd
-batch number 35 has been donde with hash underflow
-batch number 36 has been donde with hash c28017eddaafafd92bb0c75f1995c76bfbf99ef12279fb0793399b7f033aed21
-batch number 37 has been donde with hash 9796d3af3b0c9859c6c28c96b40690b113b4916730d42f0d937f6c25ebf8d886
-batch number 38 has been donde with hash underflow
-batch number 39 has been donde with hash 1afe63adc5f7e69bdd1de01276f90b8669c909302c9015ce2ed447345ab89fce
+
+batch number 0 has been donde with hash d8e810b6b9995e66228b38ed6eee80c0b738b77a77d075627b4deb5e585b5c45
+batch number 1 has been donde with hash e400301aae8adcf2e95eb6f50c04cf805a62a45de90e36b5a9a8a9d3785dd244
+batch number 2 has been donde with hash 00ab7bc99f8985d52f28cdae73505d014d0b746ce4db47642b5f9b90f340115f
+batch number 3 has been donde with hash b6854471c630c919a429b4d28f735185cf513f966bbfb8dcebdcfce86716e03e
+batch number 4 has been donde with hash f0b1c5700e5473a9c60b3bdf545314204640d11377b1b9ee0db8b27090a5c448
+batch number 5 has been donde with hash c1c6d5c87307353b0699d4a364569e8d59beb3b9c088dd3727a8e9c1f22e92ad
+batch number 6 has been donde with hash 35f15568b46157f3dc84e040a044c326e5ceaaecffb24b16d835ba5f97989a62
+batch number 7 has been donde with hash 1c0b3db623c77ff3e90faa9ff0c239f369dc1a163a617e5ccaa8d90c0a3172f3
+batch number 8 has been donde with hash 548557216898423b9ce1aaa3750e842ca985fbf2bcac2b4567779e37c88243af
+batch number 9 has been donde with hash 835e76ce391de50e02fb05ee531e407b7806e98d7d446561d9181485b7dc96f4
+batch number 10 has been donde with hash a9ee49fa7910c4c4ae5efdf33b657b720c3827166bcea88f83f20255f9dfd0cc
+batch number 11 has been donde with hash fa9cdfc65e933c2cd53a982e137330f23cf9b6a7daa2d39cf74df035a8fb5098
+batch number 12 has been donde with hash 8215d888b83838330ecd6001637117ddda829b0492e3b5a953c26f2866dfe36f
+batch number 13 has been donde with hash a05f28028463f6dbc13231ce70e3fd11d62eacb20de6fe629ac875fccebafeea
+batch number 14 has been donde with hash 151281287ce5d4e010ef96e226139bf37a6512da0d20cbf0a2d146f4054af5d2
+batch number 15 has been donde with hash 9cb41f25da1c3f92e979d87990e03d20744ce335859ca4bb255badcf04d69438
+batch number 16 has been donde with hash 60e4fb6277ef7d78086648dd734396614141f9ff84fec8822d9d1c1065acaa26
+batch number 17 has been donde with hash c854ca14b535bae679f47cca7990901fe3419de0f6bbf6f838e42f00b25c6b31
+batch number 18 has been donde with hash 29e6de4f451687d345beb25b265d96860f81df2681a80d5198d1cc82e1bfcd6b
+batch number 19 has been donde with hash 651c26e29c8068db61e3a1b6b59585f9fe153dcb9ca31e1d2ecbc2ea0c3e3ea8
+batch number 20 has been donde with hash BlockfrostClientError: socket hang up
+batch number 21 has been donde with hash 866967df88efd0e635365093f7d91e70a7b097c91bd92b7979babc23a525d0c0
+batch number 22 has been donde with hash b1a6133d7cb462f3d1f8a8bb549fa71d8fa87e71e0e01bb0c460bdee664af23b
+batch number 23 has been donde with hash b9bb482aed3aff6cb71660214ebcaa4a3b9e78e54e40f8f47fd34c72b615c699
+batch number 24 has been donde with hash b455a2ff072af5b75e3424059fca33b2ad55f99958c60d91ce6fa73cf9116960
+batch number 25 has been donde with hash 4820e9c03d4de841e5170e9b31b117ec82e02c739cc66e035fd25d2e575005e0
+batch number 26 has been donde with hash e8cf84eba011218879c40b6269734229da87879e1fab51163abb2284a31838d0
+batch number 27 has been donde with hash ac1753dab21e7055e8918f713656c5698242f983bbb24074ac13aff54809e32b
+batch number 28 has been donde with hash 16697a4edc8d633a007e2ad005797e4f1d3f7dcb9099cb3f533905ba6c6d5a03
+batch number 29 has been donde with hash e146ff35b36c5c458c1fe7d3a15bea83053e424f448d5a59ac2043456d2d39b0
+batch number 30 has been donde with hash 9fbe1774eb0448d3ab2da9becf793e8b15f0e4e19ddae8a9e907ffa3308b26d7
+batch number 31 has been donde with hash 15802da41aeaa18b181d802c340043eef0acdf53a14cfbd18b1edb27be08a3e7
+batch number 32 has been donde with hash c24c5ed3eac7f500524749b6676bf097e89d3fab7c2e257bc61a4ec068d535d5
+batch number 33 has been donde with hash 8a77fe0836ea95ada234095304cb99ad8841c93169b3bf4d83229f5841e189ed
+batch number 34 has been donde with hash d4f6f8fe2ce625924e8928bdb8c916e80480d78cd1e20c5f66ffa43b28cace60
+batch number 35 has been donde with hash 4e8ae11f63c3e906245b8294d0e60ab43b90790c4730ccd6abee5031f6952160
+batch number 36 has been donde with hash b39b1082096bab6067cf8c5e532a18bcc2d9a5faee0fc050550779e5055855d3
+batch number 37 has been donde with hash a8345bff7b6e274814b00c05d335845eeb6e1e516d627bed16e0b24b4fadb7c8
+batch number 38 has been donde with hash 8d05390f2d95da1fd9ed1911b24c7eaf471f961e3a2b97999741512abe815940
+batch number 39 has been donde with hash 87dc4f29d2130351cab860be38a46a83ef1667b7ebb8d3edb87f9a58b49c1225

@@ -4,9 +4,12 @@ const { sendAllTokens, getProtocolParams } = require("./Cardano/Utils/Utils");
 const ttl = 48450322 + 20000000 + 40000008;
 const fs = require("fs");
 const path = require("path");
+const shuffle = require("./Utils").shuffle;
+const randomSequenceGenerator = require("./randomSequenceGenerator");
 const {
   Assets,
 } = require("./Cardano/custom_modules/@emurgo/cardano-serialization-lib-nodejs/cardano_serialization_lib");
+const { Console } = require("console");
 //const { BlockFrost } = require("./Cardano/blockFrost");
 
 /* TxConfirmed(); TODO: Implement confirmation
@@ -36,25 +39,6 @@ function registerTotalAssets(data) {
   });
 }
 
-function shuffle(array) {
-  let currentIndex = array.length,
-    randomIndex;
-
-  // While there remain elements to shuffle...
-  while (currentIndex != 0) {
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-
-    // And swap it with the current element.
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex],
-      array[currentIndex],
-    ];
-  }
-
-  return array;
-}
 const materialsURL = [
   [
     "charcoal",
@@ -90,15 +74,18 @@ const materialsURL = [
   ],
 ];
 const assetsToBeMinted = {
-  charcoal: 700,
-  gemstones: 2,
-  goldcoin: 1,
-  ironore: 150,
-  ironsands: 100,
-  oakwood: 25,
-  leather: 20,
-  silvercoin: 2,
+  charcoal: 350,
+  gemstones: 20,
+  goldcoin: 5,
+  ironore: 300,
+  ironsands: 200,
+  oakwood: 55,
+  leather: 50,
+  silvercoin: 20,
 };
+const NFTstoMint = Object.values(assetsToBeMinted).reduce((x, y) => x + y, 0);
+
+const totalNumberOfBatches = NFTstoMint / 25;
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -161,99 +148,69 @@ const assetGeneratorTest = function () {
 //assetGeneratorTest();
 //console.log(assetsGenerator("gemstones")[0], assetsGenerator("gemstones")[0]);
 
-let totalAssets = [];
-Object.entries(assetsToBeMinted).forEach((x) => {
-  const assets = assetsGenerator(x[0]);
-  totalAssets = [...assets, ...totalAssets];
-}); /* 
-let randomSequence = [];
-for (let i = 0; i < totalAssets.length; i++) {
-  randomSequence = [i, ...randomSequence];
-}
-console.log(randomSequence[998]);
-fs.writeFile(
-  "./randomsequence.txt",
-  JSON.stringify(shuffle(randomSequence)),
-  (x) => console.log(x)
-);*/
+async function MintAll(array) {
+  let totalAssets = [];
+  Object.entries(assetsToBeMinted).forEach((x) => {
+    const assets = assetsGenerator(x[0]);
+    totalAssets = [...assets, ...totalAssets];
+  });
 
-const totalNumberOfBatches = totalAssets.length / 25;
-const randomSequence = JSON.parse(
-  Buffer.from(
-    fs.readFileSync("./randomsequence.txt", (e, data) => {}),
-    "utf-8"
-  ).toString()
-);
+  const randomSequence = JSON.parse(
+    Buffer.from(
+      fs.readFileSync("./randomsequence.txt", (e, data) => {}),
+      "utf-8"
+    ).toString()
+  );
 
-let suffledAssets = [];
+  console.log(randomSequence.length);
 
-randomSequence.forEach((x) => suffledAssets.push(totalAssets[x]));
-//console.log(suffledAssets);
-async function MintBatch(i) {
-  const metaDataBuilder = function () {
-    const metadata = {};
-    const helper = suffledAssets.map((x) => x[1]).slice(i * 25, (i + 1) * 25);
-    helper.forEach(
-      (help) =>
-        (metadata[Object.entries(help)[0][0]] = Object.entries(help)[0][1])
-    );
-    return metadata;
-  };
-  const assets = {
-    assets: suffledAssets.map((x) => x[0]).slice(i * 25, (i + 1) * 25),
-    metadatas: metaDataBuilder(),
-  };
-  console.log(assets);
-  try {
-    const hash = await Mint(
-      assets,
-      ttl,
-      "721",
-      "addr_test1qpt5akr98022xddld4he0rf7s603f04uv5ammywkvrk9p5fwx27w0tclpgyvut0nzqmvyxu5dnuw03rx42rup8q4qaqq2l70ns",
-      1600000 * 25
-    );
+  let suffledAssets = [];
 
-    registerMint(`batch number ${i} has been donde with hash ${hash}`);
+  randomSequence.forEach((x) => suffledAssets.push(totalAssets[x]));
+  //console.log(suffledAssets);
 
-    await sleep(240000);
-  } catch (e) {
-    console.log(e);
-    const error = `${e}`;
-    registerMint(
-      `there was the following error ${error} while minting the ${i}-batch`
-    );
+  async function MintBatch(i) {
+    const metaDataBuilder = function () {
+      const metadata = {};
+      const helper = suffledAssets.map((x) => x[1]).slice(i * 25, (i + 1) * 25);
+      helper.forEach(
+        (help) =>
+          (metadata[Object.entries(help)[0][0]] = Object.entries(help)[0][1])
+      );
+      return metadata;
+    };
+    const assets = {
+      assets: suffledAssets.map((x) => x[0]).slice(i * 25, (i + 1) * 25),
+      metadatas: metaDataBuilder(),
+    };
+    console.log(assets);
+
+    try {
+      //console.log(address_2);
+      const hash = await Mint(assets, ttl, "721", address_2, 1600000 * 25);
+
+      registerMint(`batch number ${i} has been donde with hash ${hash}`);
+
+      await sleep(3 * 60 * 1000);
+    } catch (e) {
+      console.log(e);
+      const error = `${e}`;
+      registerMint(
+        `there was the following error ${error} while minting the ${i}-batch`
+      );
+    }
   }
-}
-async function MintAll() {
-  for (let batch of [
-    1, 3, 4, 5, 8, 9, 10, 13, 14, 15, 16, 18, 19, 22, 33, 34, 35, 36, 37, 38,
-    39,
-  ]) {
+
+  console.log(totalNumberOfBatches);
+
+  for (let batch of array) {
     await MintBatch(batch);
   }
 }
 
-//console.log(address_2);
-/* sendAllTokens(
-  address_2,
-  prvKey_2,
-  "addr_test1qpujcmmsumgj6xpyknwlh4ga8y0t3vg5jtsw09s8v5xwpdta9xq2u7rwnp0q43xh8qku3prjv2yk9ex80p7368034uxs9fcr36"
-); */
-/* try {
-  MintAll();
-} catch (e) {
-  console.log(e);
-} */
+const total = Array.from(Array(totalNumberOfBatches).keys());
+const minted = [];
+const rest = total.filter((x) => !minted.includes(x));
+MintAll(rest);
 
-/* Mint(
-  {
-    assets: [{ name: `test`, quantity: "1" }],
-    metadata: "testMetadata",
-  },
-  52968181 + 200000,
-  "721",
-  "addr_test1qpujcmmsumgj6xpyknwlh4ga8y0t3vg5jtsw09s8v5xwpdta9xq2u7rwnp0q43xh8qku3prjv2yk9ex80p7368034uxs9fcr36",
-  20000000
-); */
-
-MintAll();
+//randomSequenceGenerator(NFTstoMint);

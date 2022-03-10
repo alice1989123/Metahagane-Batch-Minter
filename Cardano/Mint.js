@@ -8,12 +8,6 @@ const {
   getUtxos,
 } = require("./Utils/Utils");
 const CoinSelection = require("./CoinSelection");
-const { add } = require("@blockfrost/blockfrost-js/lib/endpoints/ipfs");
-
-/* console.log(path.join(__dirname, "/blockFrost"));
- */
-
-//console.log(serverAddress);
 
 module.exports = async function (
   assetsWithMetada,
@@ -41,6 +35,7 @@ module.exports = async function (
       addressOutput,
       extraLoveLaces
     );
+
     const txHash = wasm.hash_transaction(tx.body());
     const witnesses = tx.witness_set();
 
@@ -53,10 +48,10 @@ module.exports = async function (
       witnesses,
       tx.auxiliary_data() // transaction metadata
     );
-
     try {
       const CBORTx = Buffer.from(transaction.to_bytes(), "hex").toString("hex");
       //console.log(CBORTx);
+
       const submitionHash = await BlockFrost.txSubmit(CBORTx);
       console.log(`tx Submited tiwh txHas ${submitionHash}`);
       return submitionHash;
@@ -72,7 +67,7 @@ module.exports = async function (
 };
 
 async function mintTx(
-  assets, //
+  assets,
   metadata,
   policy,
   protocolParameters,
@@ -159,7 +154,7 @@ async function mintTx(
     mintAssets
   );
 
-  const inputs = wasm.TransactionInputs.new();
+  const inputs = await wasm.TransactionInputs.new();
   selection.input.forEach((utxo) => {
     inputs.add(
       wasm.TransactionInput.new(
@@ -167,12 +162,15 @@ async function mintTx(
         utxo.input().index()
       )
     );
+
     value = value.checked_add(utxo.output().amount());
-    value = value.checked_sub(
-      wasm.Value.new(wasm.BigNum.from_str(`${extraLoveLaces}`))
-    );
-    value = value.checked_sub(wasm.Value.new(minAda));
   });
+
+  value = value.checked_sub(wasm.Value.new(minAda));
+
+  value = value.checked_sub(
+    wasm.Value.new(wasm.BigNum.from_str(`${extraLoveLaces}`))
+  );
 
   //value = value.checked_sub(wasm.Value.new(wasm.BigNum.from_str("40000000")));
 
@@ -202,7 +200,7 @@ async function mintTx(
   let _metadata;
   if (metadata) {
     const generalMetadata = wasm.GeneralTransactionMetadata.new();
-    console.log(JSON.stringify(metadata));
+    console.log(`this is the metadata${JSON.stringify(metadata)}`);
     generalMetadata.insert(
       wasm.BigNum.from_str(metadatalabel),
 

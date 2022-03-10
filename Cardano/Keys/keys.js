@@ -14,7 +14,7 @@ function getAddressPrvKeys(ed25519_bip32) {
   /* const walletKey = wasm.Bip32PrivateKey.generate_ed25519_bip32().to_bech32();
 console.log(walletKey); */
 
-  const rootKey = wasm.Bip32PrivateKey.from_bech32(walletKey);
+  const rootKey = wasm.Bip32PrivateKey.from_bech32(ed25519_bip32);
   const accountKey = rootKey
     .derive(harden(1852)) // purpose
     .derive(harden(1815)) // coin type
@@ -42,13 +42,13 @@ console.log(walletKey); */
     .to_raw_key();
 
   const address = baseAddr.to_address().to_bech32();
-  return { address, prvKey };
+
+  return [address, prvKey];
 }
 
-const { prvKey, address } = getAddressPrvKeys(walletKey);
-const address_2 = getAddressPrvKeys(walletKey_2).address;
-const prvKey_2 = getAddressPrvKeys(walletKey_2).prvKey;
-module.exports.prvKey = prvKey;
-module.exports.address = address;
-module.exports.prvKey_2 = prvKey_2;
-module.exports.address_2 = address_2;
+module.exports.prvKey = getAddressPrvKeys(walletKey)[1];
+module.exports.address = getAddressPrvKeys(walletKey)[0];
+module.exports.prvKey_2 = getAddressPrvKeys(walletKey_2)[1];
+module.exports.address_2 = getAddressPrvKeys(walletKey_2)[0];
+
+//console.log(getAddressPrvKeys(walletKey)[0], getAddressPrvKeys(walletKey_2)[0]);
